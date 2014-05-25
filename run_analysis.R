@@ -42,21 +42,24 @@ names(finalDataSet) <- gsub("Mag", "Magnitude ", names(finalDataSet))
 names(finalDataSet) <- gsub("Jerk", "Jerk ", names(finalDataSet))
 
 names(finalDataSet) <- gsub("-", "", names(finalDataSet))
-names(finalDataSet) <- gsub("meanFreq\\(\\)", "Mean Frequency", names(finalDataSet))
+
 names(finalDataSet) <- gsub("meanFreq\\(\\)X", "x Mean Frequency", names(finalDataSet))
 names(finalDataSet) <- gsub("meanFreq\\(\\)Y", "Y Mean Frequency", names(finalDataSet))
 names(finalDataSet) <- gsub("meanFreq\\(\\)Z", "Z Mean Frequency", names(finalDataSet))
 
-names(finalDataSet) <- gsub("std\\(\\)", "Standard Deviation", names(finalDataSet))
 names(finalDataSet) <- gsub("std\\(\\)X", "X Standard Deviation", names(finalDataSet))
 names(finalDataSet) <- gsub("std\\(\\)Y", "Y Standard Deviation", names(finalDataSet))
 names(finalDataSet) <- gsub("std\\(\\)Z", "Z Standard Deviation", names(finalDataSet))
 
-names(finalDataSet) <- gsub("mean\\(\\)", "Mean", names(finalDataSet))
 names(finalDataSet) <- gsub("mean\\(\\)X", "x Mean", names(finalDataSet))
 names(finalDataSet) <- gsub("mean\\(\\)Y", "Y Mean", names(finalDataSet))
 names(finalDataSet) <- gsub("mean\\(\\)Z", "Z Mean", names(finalDataSet))
 
+names(finalDataSet) <- gsub("meanFreq\\(\\)", "Mean Frequency", names(finalDataSet))
+names(finalDataSet) <- gsub("mean\\(\\)", "Mean", names(finalDataSet))
+names(finalDataSet) <- gsub("std\\(\\)", "Standard Deviation", names(finalDataSet))
+
+names(finalDataSet)
 ### Step 5 -- Generate tidy data set
 dataSplitBySubjectActivities <- split(finalDataSet, list(finalDataSet$Subject, finalDataSet$Activity))
 aggregatedData <- t(sapply(dataSplitBySubjectActivities, function(x) colMeans(x[1:79])))
