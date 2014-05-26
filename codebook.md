@@ -1,4 +1,17 @@
-# This codebook will explain each of the output variables which have been provided in the exercise
+# Data Cleansing Assignment 1
+
+This codebook will explain each of the output variables which have been provided in the exercise, please see the original data set for a more comprehensive description of the values. the steps performed by run analysis are commented clearly. here is a breakdown of how the code works. This is what is contained in the readme but for completeness i have included it here
+
+* Set working directory, this line will only need changing depending on the environment you are working with
+* Read the file into one big data frame
+* Convert the labels from numbers to factors
+* limit the columns which are visibile (which contain mean/std)
+* Replace shorthand words for the actual words
+* Generate new data set which has all variabls aggregated- i have made the assumption this data set is diffrent from the first Data set, this could be incorrect however the ambiguity of the exercise made me choose this apporach as meaning the mean at the time seemed redundant.
+   
+   
+
+## Variables
 
 * Subject - Numeric - the subject ID
 * Activity - Factor - the actvity of the user {WALKING, SITTING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, LAYING}
