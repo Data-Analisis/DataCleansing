@@ -9,7 +9,10 @@ This codebook will explain each of the output variables which have been provided
 * Replace shorthand words for the actual words
 * Generate new data set which has all variabls aggregated- i have made the assumption this data set is diffrent from the first Data set, this could be incorrect however the ambiguity of the exercise made me choose this apporach as meaning the mean at the time seemed redundant.
    
-   
+
+
+ss
+ss
 
 ## Variables
 
