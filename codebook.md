@@ -11,10 +11,6 @@ This codebook will explain each of the output variables which have been provided
    
 
 
-This is a new file 
-
-this is a new line 
-
 ## Variables
 
 * Subject - Numeric - the subject ID
